@@ -1,39 +1,38 @@
 import React from "react";
-import "../styles/_cat.scss"
+import "../styles/_cat.scss";
+
+
 const Categories = () => {
   return (
-    <div className="categories-container1">
-      <div className="categories-header1">
-        <h2>Categories</h2>
-        <a href="/src">View all +</a>
+    <div className="custom_categories_container">
+      <div className="custom_categories_header headerp">
+        <h2 className="httag">Categories</h2>
+        <a href="/src" className="view_all">View all +</a>
       </div>
-      <div className="categories-layout1">
-        <div className="large-card1">
-          <div className="category-card1">
-            <img src="../assets/Frame 1000007414.svg" alt="Fresh Vegetables" className="category-image1" />
-            <div className="category-overlay1">
-              <span className="category-badge1">Fast Selling</span>
-              <h3>Fresh Vegetables</h3>
-              <p>Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
-              <button className="shop-button1">Shop now →</button>
+      <div className="custom_categories_layout">
+        <div className="custom_large_card">
+          <div className="custom_category_card custom_vegetable_card">
+              <span className="custom_category_badge">Fast Selling</span>
+            <div className="custom_category_overlay">
+              <h3 className="h3name">Fresh Vegetables</h3>
+              <p className="ptag">Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
+              <button className="custom_shop_button">Shop now →</button>
             </div>
           </div>
         </div>
-        <div className="small-cards1">
-          <div className="category-card1 small-card1">
-            <img src="https://via.placeholder.com/300" alt="Grains" className="category-image1" />
-            <div className="category-overlay1">
-              <h3>Grains</h3>
-              <p>Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
-              <button className="shop-button1">Shop now →</button>
+        <div className="custom_small_cards">
+          <div className="custom_category_card custom_small_card custom_grains_card">
+            <div className="custom_category_overlay">
+              <h3 className="h3name">Grains</h3>
+              <p className="ptag">Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
+              <button className="custom_shop_button">Shop now →</button>
             </div>
           </div>
-          <div className="category-card1 small-card1">
-            <img src="https://via.placeholder.com/300" alt="Fresh Fruits" className="category-image1" />
-            <div className="category-overlay1">
-              <h3>Fresh Fruits</h3>
-              <p>Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
-              <button className="shop-button1">Shop now →</button>
+          <div className="custom_category_card custom_small_card custom_fruits_card">
+            <div className="custom_category_overlay">
+              <h3 className="h3name">Fresh Fruits</h3>
+              <p className="ptag">Ranging from Efo, Ewedu, Gbure, Carrots...etc</p>
+              <button className="custom_shop_button">Shop now →</button>
             </div>
           </div>
         </div>

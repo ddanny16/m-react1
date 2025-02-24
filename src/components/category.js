@@ -28,7 +28,7 @@ const CategoryCard = ({ title, description, image, tag, size }) => {
 const CategoriesSection = () => {
   return (
     <div className="categories-container">
-      <div className="header">
+      <div className="headerp">
         <h2>Categories</h2>
         <a href="/src" className="view-all">
           View all →

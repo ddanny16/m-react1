@@ -1,0 +1,111 @@
+@media (min-width: 600px) {
+  .custom_categories_container {
+    display: none;
+  }
+}
+.httag{
+  font-size: 13px;
+}
+.view_all{
+  font-size: 13px;
+list-style-type: none;
+text-decoration: none;
+color: #2F945C;
+}
+.custom_categories_container {
+  width: 90%;
+  margin: 0 auto;
+}
+.custom_vegetable_card {
+  background-image: url("../assets/Frame 1000007411.svg");
+}
+
+.custom_grains_card {
+  background-image: url("../assets/Frame 1000007412.svg");
+}
+
+.custom_fruits_card {
+  background-image: url("../assets/Frame 1000007414.svg");
+}
+
+.custom_categories_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom_categories_layout {
+  display: flex;
+  flex-direction: row; // Ensure left and right sections are side by side
+  gap: 10px; // Add spacing between columns
+}
+
+.custom_large_card {
+  width: 55%; // Large card takes 55% of the space
+}
+
+.custom_small_cards {
+  display: flex;
+  flex-direction: column; // Stack small cards vertically
+  gap: 10px; // Add spacing between the small cards
+  width: 45%; // Small cards take 45% of the space
+}
+
+.custom_category_card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
+  color: white;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.custom_large_card .custom_category_card {
+  height: 250px; // Ensure the large card is taller
+}
+
+.custom_small_card {
+  height: 100%; // Each small card should have equal height
+}
+
+.custom_category_overlay {
+  // background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 100%;
+  // margin-top: 9px;
+
+}
+
+.custom_category_badge {
+  background: #ffcc00;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 6px;
+}
+
+.custom_shop_button {
+  background: #2F945C;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 5px;
+  border-radius: 5px;
+  // width: 100px;
+}
+
+.h3name {
+  font-size: 11px;
+}
+
+.ptag {
+  font-size: 5px;
+}

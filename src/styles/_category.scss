@@ -2,7 +2,7 @@
   width: 100%;
   //   padding: 20px;
 
-  .header {
+  .headerp{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,4 +237,25 @@ sells {
   .shop {
     font-size: 10px;
   }
+}
+@media(max-width:600px){
+  .categories-container{
+    display: none;
+  }
+}
+@media(max-width:1200px){
+  .categories-container .category-grid {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.categories-container .category-grid .left .category-card {
+  width: 596px;
+  height: 100%;
+}
 }
