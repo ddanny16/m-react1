@@ -1,0 +1,93 @@
+.firstmain {
+  background: #0c2718;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.firstwhole {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Needed for absolute dropdowns */
+}
+
+.firstleft {
+  display: flex;
+  align-items: center;
+
+  .phone {
+    margin-right: 8px;
+  }
+}
+
+.firstmiddle {
+  .middle {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .middle2 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.firstright {
+  display: flex;
+  gap: 15px;
+  position: relative; /* Needed for absolute dropdown positioning */
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+
+  .arrow {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+}
+
+/* Dropdown Menu (Fixed) */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #fff;
+  color: #0c2718;
+  list-style: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  width: 120px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Keeps dropdown above other content */
+  display: none; /* Hidden by default */
+}
+
+/* Show menu when open */
+.language-menu,
+.country-menu {
+  display: block;
+}
+
+/* Prevent background from expanding */
+.dropdown-menu {
+  position: absolute;
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #0c2718;
+  color: #fff;
+}

@@ -1,0 +1,199 @@
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+ .lists{
+    color: #101928;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Inter;
+ }
+ .logo{
+    display: flex;
+    align-self: center;
+ }
+ .loginbtn {
+    border: 1.5px solid #2F945C;
+    background-color: #fff;
+    color: #2F945C;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 8px;
+  
+    &:hover {
+      border: 1.5px solid #2F945C;
+      color: #fff;
+      background-color: #2F945C;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    }
+  }
+  .signbtn{
+    border: 1.5px solid #2F945C;
+    color: #fff;
+    background-color: #2F945C;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 8px;
+  
+    &:hover {
+      border: 1.5px solid #2F945C;
+      background-color: #fff;
+      color: #2F945C;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    }
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+  }
+  .lists{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+  }
+
+  .searchicon{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+  .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  @media(max-width:1198px){
+    .loginbtn {
+        border: 1.5px solid #2F945C;
+        background-color: #fff;
+        color: #2F945C;
+        font-size: 10px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 8px;
+      
+        &:hover {
+          border: 1.5px solid #2F945C;
+          color: #fff;
+          background-color: #2F945C;
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+        }
+      }
+      .signbtn{
+        border: 1.5px solid #2F945C;
+        color: #fff;
+        background-color: #2F945C;
+        font-size: 10px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 8px;
+      
+        &:hover {
+          border: 1.5px solid #2F945C;
+          background-color: #fff;
+          color: #2F945C;
+          cursor: pointer;
+          transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+        }
+      }
+
+  }
+//   908px
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburger-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Rotate the hamburger icon when menu is open */
+  .hamburger.open .hamburger-icon {
+    transform: rotate(180deg);
+  }
+  
+  /* Mobile Menu */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      transition: left 0.4s ease-in-out;
+    }
+  
+    .nav-links.open {
+      display: flex;
+      left: 0;
+      align-items: center;
+    
+    }
+  
+    /* Smooth fade-in animation for items */
+    .lists,
+    .searchicon,
+    .btns {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  
+    .nav-links.open .lists,
+    .nav-links.open .searchicon,
+    .nav-links.open .btns {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

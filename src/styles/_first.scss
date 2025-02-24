@@ -1,0 +1,144 @@
+.firstmain {
+  background-color: #0c2718;
+  padding: 5px;
+}
+a li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.firstwhole {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px;
+  position: relative;
+}
+.firstleft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+.firstmiddle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.firstright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+number {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: Inter;
+  opacity: 70%;
+}
+.middle {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: Inter;
+  opacity: 70%;
+}
+b {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: Inter;
+  opacity: 40%;
+}
+.middle2 {
+  color: #fbbc05;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: Inter;
+  // opacity: 70%;
+}
+
+.language {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  gap: 9px;
+}
+.country {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #fff;
+  color: #0c2718;
+  list-style: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  width: 120px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Keeps dropdown above other content */
+  display: none; /* Hidden by default */
+}
+
+.language-menu,
+.country-menu {
+  display: block;
+}
+
+/* Prevent background from expanding */
+.dropdown-menu {
+  position: absolute;
+}
+.dropdown-menu {
+  z-index: 1000;
+}
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #0c2718;
+  color: #fff;
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+
+  .arrow {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+}
+
+@media (max-width: 655px) {
+    .firstmain,
+    .firstwhole,
+    .firstleft,
+    .firstmiddle,
+    .firstright {
+      display: none;
+    }
+  }
