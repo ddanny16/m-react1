@@ -5,6 +5,9 @@ import Hero from "./components/hero";
 import Brand from "./components/brands";
 import Category from "./components/category";
 import Cat from "./components/cat";
+import Customer from "./components/customer";
+import Collection from "./components/collection";
+import Popular from "./components/popular";
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
       <Brand />
       <Category />
       <Cat />
+      <Customer />
+      <Collection />
+      <Popular />
     </div>
   );
 }
