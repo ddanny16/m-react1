@@ -8,6 +8,8 @@ import Cat from "./components/cat";
 import Customer from "./components/customer";
 import Collection from "./components/collection";
 import Popular from "./components/popular";
+import Banner from "./components/banner";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <Customer />
       <Collection />
       <Popular />
+      <Banner />
+      <Footer />
     </div>
   );
 }

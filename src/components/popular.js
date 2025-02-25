@@ -22,7 +22,9 @@ const PopularProducts = () => {
           <img src={product1} alt="Court Heels" className="product_image" />
           <cells>
             <h3 className="product_name">Court Heels</h3>
-            <span className="product_price">$95.00</span>
+            <span className="product_price">
+              $95<sup>.00</sup>
+            </span>
           </cells>
           <p className="product_category">Red Stilettos</p>
           <div className="product_rating">
@@ -47,7 +49,9 @@ const PopularProducts = () => {
           <cells>
             {" "}
             <h3 className="product_name">Court Heels</h3>
-            <span className="product_price">$95.00</span>
+            <span className="product_price">
+              $95<sup>.00</sup>
+            </span>
           </cells>
           <p className="product_category">Red Stilettos</p>
           <div className="product_rating">
@@ -72,7 +76,9 @@ const PopularProducts = () => {
           <cells>
             {" "}
             <h3 className="product_name">Court Heels</h3>
-            <span className="product_price">$95.00</span>
+            <span className="product_price">
+              $95<sup>.00</sup>
+            </span>
           </cells>
           <p className="product_category">Red Stilettos</p>
           <div className="product_rating">
@@ -97,7 +103,9 @@ const PopularProducts = () => {
           <cells>
             {" "}
             <h3 className="product_name">Court Heels</h3>
-            <span className="product_price">$95.00</span>
+            <span className="product_price">
+              $95<sup>.00</sup>
+            </span>
           </cells>
           <p className="product_category">Red Stilettos</p>
           <div className="product_rating">

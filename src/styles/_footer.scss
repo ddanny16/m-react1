@@ -1,0 +1,111 @@
+.footer {
+  text-align: center;
+  padding: 50px;
+  background: #f8f8f8;
+  margin-top: 40px;
+  position: relative;
+
+  .footer-content {
+    margin: 0 auto;
+    width: 94%;
+    text-align: left;
+  }
+
+  .subtitle {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .hrtag {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .copyright {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+
+  .logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.redrum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media(max-width:400px){
+  .footer .subtitle{
+    font-size: 4px;
+  }
+  .footer h2{
+    font-size: 8.32px;
+  }
+  .footer .description{
+    font-size: 5px;
+  }
+  .footer .social-icons .social-icon {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-top: 10px;
+}
+.footer .copyright{
+  font-size: 4px;
+}
+.logo123{
+  width: 20px;
+}
+}
