@@ -1,0 +1,114 @@
+.login_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5f5f5;
+  }
+  
+  .login_image {
+    flex: 1;
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  .login_form_container {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .login_heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .login_text {
+    text-align: center;
+    margin-bottom: 1rem;
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  
+  .login_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login_input {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login_button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login_button:hover {
+    background: #218838;
+  }
+  
+  .login_error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .login_forgot_password {
+    text-align: center;
+    margin-top: 0.5rem;
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+  
+  .login_social_login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  .login_google {
+    background: #db4437;
+  }
+  
+  .login_twitter {
+    background: #1da1f2;
+  }
+  
+  .login_google,
+  .login_twitter {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login_google:hover {
+    background: #c1351d;
+  }
+  
+  .login_twitter:hover {
+    background: #0d8de1;
+  }
+  

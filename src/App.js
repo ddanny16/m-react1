@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import First from "./components/first";
 import Header from "./components/header";
 import Hero from "./components/hero";
@@ -10,23 +11,32 @@ import Collection from "./components/collection";
 import Popular from "./components/popular";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
-
+import Login from "./pages/login";  // Import Login page
+import SignUp from "./pages/signup"; // Import SignUp page
 
 function App() {
   return (
-    <div>
+    <Router>
       <First />
       <Header />
-      <Hero />
-      <Brand />
-      <Category />
-      <Cat />
-      <Customer />
-      <Collection />
-      <Popular />
-      <Banner />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Hero />
+            <Brand />
+            <Category />
+            <Cat />
+            <Customer />
+            <Collection />
+            <Popular />
+            <Banner />
+          </>
+        } />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

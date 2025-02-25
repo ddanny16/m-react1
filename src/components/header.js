@@ -6,6 +6,8 @@ import Cart from "../assets/icon.svg";
 import SearchBar from "../components/searchbar";
 import HamburgerIcon from "../assets/ri_menu-4-line.svg";
 import CloseIcon from "../assets/close.png";
+import { Link } from "react-router-dom"; // Import Link
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,8 +55,12 @@ const Header = () => {
             </ul>
 
             <ul className="btns">
-              <button className="loginbtn">LOGIN</button>
-              <button className="signbtn">SIGN UP</button>
+              <Link to="/login">
+                <button className="loginbtn">LOGIN</button>
+              </Link>
+              <Link to="/signup">
+                <button className="signbtn">SIGN UP</button>
+              </Link>
             </ul>
           </div>
         </nav>
