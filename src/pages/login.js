@@ -37,7 +37,7 @@ const Login = () => {
         <h2 className="signup_heading">Login</h2>
         <p className="signup_text">
           Don't have an account?{" "}
-          <Link className="text_ll" to="/signup">
+          <Link className="text_ll" to="./signup.js">
             Sign Up
           </Link>
         </p>
