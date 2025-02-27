@@ -53,7 +53,7 @@ const Signup = () => {
         <h2 className="signup_heading">Sign Up</h2>
         <p className="signup_text">
           You have an account already?{" "}
-          <a className="text_ll" href="./login.js">
+          <a className="text_ll" href="/login">
             Login
           </a>
         </p>
