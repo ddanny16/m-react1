@@ -1,5 +1,10 @@
 import { useState } from "react";
-import "../styles/_login.scss";
+import "../styles/_signup.scss";
+import Sideimg2 from "../assets/image 1100 (1).svg";
+import Google from "../assets/Google Icon.svg";
+import Twitter from "../assets/Twitter Icon.svg";
+import Logo from "../assets/Frame 427321331.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -21,41 +26,70 @@ const Login = () => {
   };
 
   return (
-    <div className="login_container">
-      <div className="login_image">
-        <img src="/path-to-your-image.jpg" alt="Market woman selling" />
+    <div className="signup_container">
+      <Link className="relative_img" to="/">
+        <img src={Logo} alt="Logo" />
+      </Link>
+      <div className="signup_image">
+        <img src={Sideimg2} alt="Market woman smiling" />
       </div>
-      <div className="login_form_container">
-        <h2 className="login_heading">Welcome back!</h2>
-        <p className="login_text">
-          Don’t have an account? <a href="/signup">Sign Up</a>
+      <div className="signup_form">
+        <h2 className="signup_heading">Login</h2>
+        <p className="signup_text">
+          Don't have an account?{" "}
+          <Link className="text_ll" to="/signup">
+            Sign Up
+          </Link>
         </p>
-        <form className="login_form" onSubmit={handleSubmit}>
+        <form className="signup_form_element" onSubmit={handleSubmit}>
+          <label htmlFor="email">Email Address</label>
           <input
-            className="login_input"
+            className="signup_input"
             type="email"
-            placeholder="Email Address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
+
+          <label htmlFor="password">Password</label>
           <input
-            className="login_input"
+            className="signup_input"
             type="password"
-            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          {error && <p className="login_error">{error}</p>}
-          <button className="login_button" type="submit">Login</button>
+
+          {error && <p className="signup_error">{error}</p>}
+
+          <button className="signup_button" type="submit">
+            Login
+          </button>
+
+          <label className="signup_label">
+            <input className="signup_checkbox" type="checkbox" required /> I
+            Agree to the{" "}
+            <Link className="text_ll" to="/terms">
+              Terms
+            </Link>{" "}
+            and{" "}
+            <Link className="text_ll" to="/terms">
+              Conditions
+            </Link>
+          </label>
+
+          <center className="center_or">or</center>
         </form>
-        <p className="login_forgot_password">
-          <a href="/forgot-password">Forgot Password?</a>
-        </p>
-        <div className="login_social_login">
-          <button className="login_google">Google</button>
-          <button className="login_twitter">Twitter</button>
+
+        <div className="signup_social_login">
+          <button className="signup_google">
+            <img className="google_img" src={Google} alt="Google" />
+            <span className="googles">Google</span>
+          </button>
+          <button className="signup_twitter">
+            <img className="google_img" src={Twitter} alt="Twitter" />
+            <span className="googles">Twitter</span>
+          </button>
         </div>
       </div>
     </div>

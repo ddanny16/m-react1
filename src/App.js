@@ -11,31 +11,35 @@ import Collection from "./components/collection";
 import Popular from "./components/popular";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
-import Login from "./pages/login";  // Import Login page
+import Login from "./pages/login"; // Import Login page
 import SignUp from "./pages/signup"; // Import SignUp page
 
 function App() {
   return (
     <Router>
-      <First />
-      <Header />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Brand />
-            <Category />
-            <Cat />
-            <Customer />
-            <Collection />
-            <Popular />
-            <Banner />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <First />
+              <Header />
+              <Hero />
+              <Brand />
+              <Category />
+              <Cat />
+              <Customer />
+              <Collection />
+              <Popular />
+              <Banner />
+              <Footer />
+            </>
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
